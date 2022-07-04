@@ -1,3 +1,5 @@
+package mavenTestNGHomework;
+
 public class CalculatorOne {
     int result;
 
