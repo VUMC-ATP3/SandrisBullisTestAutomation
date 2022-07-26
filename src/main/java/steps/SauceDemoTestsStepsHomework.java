@@ -2,18 +2,14 @@ package steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import pageObjectsHomework.LoginPage;
 
 import java.time.Duration;
 
-public class SauceDemoTestsSteps {
+public class SauceDemoTestsStepsHomework {
 
     WebDriver driver;
     LoginPage loginPage;
@@ -26,7 +22,7 @@ public class SauceDemoTestsSteps {
         driver.manage().window().maximize();
         loginPage = new pageObjectsHomework.LoginPage(driver);
     }
-    @After("@browser")
+    @After("@browser1")
     public void tearDown(){
         driver.close();
     }
