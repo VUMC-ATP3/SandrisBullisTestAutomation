@@ -27,15 +27,11 @@ public class SauceDemoTestsStepsHomework {
         driver.close();
     }
 
-    @Given( "User is navigated to {string}")
-    public void userIsNavigatedTo(String url){
-        driver.get(url);
+
+
+
+    @Given("user is navigated to {string}")
+    public void userIsNavigatedToString(String Url) {
+        driver.get(Url);
     }
-
-
-
-
-
-
-
 }
